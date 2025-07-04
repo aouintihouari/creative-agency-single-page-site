@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Creative Single Page Site</title>
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header body text-white">
+        <div class="logo-container">
+          <img src="assets/desktop/logo.svg" alt="logo" />
+        </div>
+        <nav class="navigation bg-red">
+          <ul class="navigation-list">
+            <li>About</li>
+            <li>Service</li>
+            <li>Projects</li>
+            <li class="bg-black btn-desktop-nav bold">Schedule a Call</li>
+          </ul>
+        </nav>
+        <img
+          id="menu"
+          class="menu"
+          src="assets/mobile/icon-hamburger.svg"
+          alt="hamburger"
+        />
+        <nav class="mobile-navigation bg-black">
+          <ul>
+            <li>About</li>
+            <li>Service</li>
+            <li>Projects</li>
+            <li class="bg-red btn-mobile-nav bold">Schedule a Call</li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <picture class="hero-image__container">
+          <source
+            srcset="assets/desktop/image-hero.jpg"
+            media="(min-width: 1024px)" />
+          <source
+            srcset="assets/tablet/image-hero.jpg"
+            media="(min-width: 769px)" />
+          <source
+            srcset="assets/mobile/image-hero.jpg"
+            media="(max-width: 768px)" />
+          <img class="hero__image" src="assets/mobile/image-hero.jpg" alt=""
+        /></picture>
+        <article class="hero-content">
+          <h1 class="h1 hero__title">Branding & website design agency</h1>
+          <p class="hero__description">
+            We specialize in visual storytelling by creating cohesive brand and
+            website design solutions for small businesses, giving lasting
+            impressions to audiences in a digital world.
+          </p>
+          <button class="btn body bold bg-red text-white">Learn More</button>
+        </article>
+      </section>
+      <section class="strategy-container">
+        <picture class="strategy-image__container">
+          <source
+            srcset="assets/desktop/image-strategic.jpg"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="assets/tablet/image-strategic.jpg"
+            media="(min-width: 769px)"
+          />
+          <img
+            class="strategy-image"
+            src="assets/mobile/image-strategic.jpg"
+            alt="strategic image"
+          />
+        </picture>
+        <article class="strategy-content text-white bg-black">
+          <h2 class="strategy-content__title">
+            <span class="text-red">Design</span> is strategic.
+          </h2>
+          <blockquote class="body strategy-quote">
+            <p>
+              “A well-crafted design strategy consistently produces desired
+              outcomes and brand awareness. We are firm believers that success
+              lies in creative collaboration with our clients.”
+            </p>
+          </blockquote>
+          <a href="#" class="link text-red">Schedule a Call</a>
+        </article>
+        <img
+          class="red-wave"
+          src="assets/desktop/bg-pattern-wave-red.svg"
+          alt=""
+        />
+      </section>
+      <section class="approach-container">
+        <div class="approach-title__container">
+          <h3>Our approach for creating a winning brand</h3>
+        </div>
+        <article class="approach-content bg-red text-white">
+          <div class="approach-section__container">
+            <div class="number">01</div>
+            <h4 class="approach-title body">Brand Strategy</h4>
+            <p class="approach-description">
+              Brand strategy is critical for long-term success. Outshining
+              competitors and capturing the target audience are key.
+            </p>
+          </div>
+          <div class="approach-section__container">
+            <div class="number">02</div>
+            <h4 class="approach-title body">Brand Design</h4>
+            <p class="approach-description">
+              Keeping the brand design unique and meaningful helps in
+              communicating the brand’s timeless value effectively.
+            </p>
+          </div>
+          <div class="approach-section__container">
+            <div class="number">03</div>
+            <h4 class="approach-title body">Web Design</h4>
+            <p class="approach-description">
+              A beautifully crafted website is the best tool for brand
+              awareness, and ultimately results in increased revenues.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="product-roadmap-container">
+        <div class="product-roadmap-box">
+          <picture class="product-roadmap-box-image">
+            <source
+              srcset="assets/desktop/image-slide-1.jpg"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="assets/tablet/image-slide-1.jpg"
+              media="(min-width: 769px)"
+            />
+            <source
+              srcset="assets/mobile/image-slide-1.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="slider-image"
+              src="assets/mobile/image-slide-1.jpg"
+              alt="slide image"
+            />
+          </picture>
+          <h5>Lean Product Roadmap</h5>
+          <p>2019 Project</p>
+        </div>
+        <div class="product-roadmap-slider">
+          <h6>Brand naming & guidelines</h6>
+          <div class="slider-buttons">
+            <img src="assets/desktop/icon-arrow-previous.svg" alt="next" />
+            <img src="assets/desktop/icon-arrow-next.svg" alt="previous" />
+          </div>
+        </div>
+        <img
+          class="white-wave"
+          src="assets/desktop/bg-pattern-wavy-white.svg"
+          alt=""
+        />
+      </section>
+      <footer class="footer">
+        <img
+          class="footer-red-wave"
+          src="assets/desktop/bg-pattern-wave-red.svg"
+          alt=""
+        />
+        <h6>Let's build something great together.</h6>
+        <button class="btn bg-red text-white">Schedule a Call</button>
+      </footer>
+    </main>
+  </body>
+</html>
